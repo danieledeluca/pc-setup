@@ -1,5 +1,7 @@
 # PC Setup
 
+This repo contains info on all the apps, tools and settings I use on my PC.
+
 ## Software
 
 ### Winget
