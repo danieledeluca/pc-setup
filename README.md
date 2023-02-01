@@ -136,14 +136,15 @@ Run the config script.
 
 ### Global configuration
 
-In your `/root` directory run this command to install some dependencies useful for linting and formatting code:
+In your `~` directory run this command to install some dependencies useful for linting and formatting code:
 
 ```
-npm i -D eslint eslint-config-airbnb-base eslint-plugin-import stylelint stylelint-config-sass-guidelines
+npm i -D prettier eslint eslint-config-airbnb-base eslint-plugin-import stylelint stylelint-config-sass-guidelines
 ```
 
 These are the dependencies that will be install:
 
+-   [prettier](https://www.npmjs.com/package/prettier)
 -   [eslint](https://www.npmjs.com/package/eslint)
     -   [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
     -   [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
