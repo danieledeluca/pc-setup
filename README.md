@@ -8,17 +8,31 @@ This repo contains info on all the apps, tools and settings I use on my PC.
 
 Winget allow you to install apps from `Windows Terminal`.
 
-Run this command in your `Terminal` to install a list of basic apps ([winstall](https://winstall.app/)).
+Run this command in your `Terminal` to install a list of basic apps ([winstall](https://winstall.app/packs/zVcEYPpNJ)).
 
 ```
-winget install --id=Google.Chrome -e  && winget install --id=Google.Drive -e  && winget install --id=7zip.7zip -e  && winget install --id=Microsoft.WindowsTerminal.Preview -e  && winget install --id=Bitwarden.Bitwarden -e  && winget install --id=WhatsApp.WhatsApp -e  && winget install --id=Glarysoft.GlaryUtilities -e  && winget install --id=Logitech.OptionsPlus -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Notepad++.Notepad++ -e  && winget install --id=VideoLAN.VLC.Nightly -e  && winget install --id=Microsoft.PowerToys -e  && winget install --id=QL-Win.QuickLook -e  && winget install --id=RevoUninstaller.RevoUninstaller -e  && winget install --id=Spotify.Spotify -e  && winget install --id=TeamViewer.TeamViewer -e  && winget install --id=Telegram.TelegramDesktop -e  && winget install --id=Figma.Figma -e
+winget install --id=Google.Chrome -e  && winget install --id=Google.Drive -e  && winget install --id=7zip.7zip -e  && winget install --id=RARLab.WinRAR -e  && winget install --id=Microsoft.WindowsTerminal.Preview -e  && winget install --id=Microsoft.PowerToys -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Notepad++.Notepad++ -e  && winget install --id=Flywheel.Local -e  && winget install --id=Figma.Figma -e  && winget install --id=WhatsApp.WhatsApp -e  && winget install --id=Spotify.Spotify -e  && winget install --id=VideoLAN.VLC.Nightly -e  && winget install --id=Glarysoft.GlaryUtilities -e  && winget install --id=RevoUninstaller.RevoUninstaller -e  && winget install --id=QL-Win.QuickLook -e  && winget install --id=Logitech.OptionsPlus -e
 ```
 
-### Microsoft Store
+List of apps:
 
-Some apps need to be installed trough `Microsoft Store`:
-
--   [Netflix](https://apps.microsoft.com/store/detail/netflix/9WZDNCRFJ3TJ?hl=en-us&gl=US)
+-   Google Chrome
+-   Google Drive
+-   7-Zip
+-   WinRAR
+-   WIndows Terminal Preview
+-   PowerToys
+-   Microsoft Visual Studio Code
+-   Notepad++
+-   Local
+-   Figma
+-   WhatsApp
+-   Spotify
+-   VLC media player nightly
+-   Glary Utilities
+-   Revo Uninstaller
+-   QuickLook
+-   Logi Options+
 
 ### Extra apps
 
