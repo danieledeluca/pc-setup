@@ -108,7 +108,14 @@ ssh-keygen -o -t rsa -C "48753350+danieledeluca@users.noreply.github.com"
 Add your `SSH key` generated to the `ssh-agent`.
 
 ```
-ssh-add ~/.ssh/id_rsa
+eval `ssh-agent -s`
+ssh-add
+```
+
+Create a new SSH key on [Github](https://github.com/settings/keys)
+
+```
+cat .ssh/id_rsa.pub
 ```
 
 Clone the [`.dotfiles`](https://github.com/danieledeluca/dotfiles) repository to get all the configuration files you need.
@@ -120,7 +127,7 @@ git clone git@github.com:danieledeluca/dotfiles.git ~/.dotifles
 Run the config script.
 
 ```
-~/.dotfiles/config.sh
+~/.dotifles/config.sh
 ```
 
 ---
