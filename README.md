@@ -56,18 +56,15 @@ Open the `PowerShell` as **administrator** and run these commands.
 // Install WSL
 wsl --install
 
-// Install Debian
-wsl --install -d Debian
-
-// Set root as default user
-debian config --default-user root
+// Install Ubuntu
+wsl --install -d Ubuntu
 
 // Install Git
 sudo apt-get install git
 
 // Install nvm (Node Version Manager)
 sudo apt-get install curl
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
 // Install NodeJS
 nvm install --lts
