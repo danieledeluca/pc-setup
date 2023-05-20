@@ -43,6 +43,8 @@ Some other apps need to be downloaded from their sties:
     -   Adobe Illustrator
     -   Adobe Acrobat DC
 -   [McAfee](https://myaccount.mcafee.com/dashboard/it-it/0) is an antivirus app
+-   [Nearby share](https://www.android.com/better-together/nearby-share-app/) allow you to share anything with nearby devices
+-   [Poedit](https://poedit.net/) allow you to translate WordPress site
 
 ---
 
@@ -52,21 +54,21 @@ Install the [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) (Window
 
 Open the `PowerShell` as **administrator** and run these commands.
 
-```
-// Install WSL
+```sh
+# Install WSL
 wsl --install
 
-// Install Ubuntu
+# Install Ubuntu
 wsl --install -d Ubuntu
 
-// Install Git
+# Install Git
 sudo apt-get install git
 
-// Install nvm (Node Version Manager)
+# Install nvm (Node Version Manager)
 sudo apt-get install curl
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/master/install.sh | bash
 
-// Install NodeJS
+# Install NodeJS
 nvm install --lts
 ```
 
@@ -80,7 +82,7 @@ Customize the `Windows Terminal Preview`.
 
 [Oh-my-zsh](https://ohmyz.sh/) is a framework built on top of `Zsh` shell.
 
-```
+```sh
 sudo apt-get install zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
@@ -91,7 +93,7 @@ Oh-my-zsh has a lot of useful plugins.
 
 -   [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions) suggests commands as you type based on history and completions.
 
-    ```
+    ```sh
     sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
 
@@ -101,32 +103,32 @@ Oh-my-zsh has a lot of useful plugins.
 
 First of all you need to generate a public `SSH key`.
 
-```
+```sh
 ssh-keygen -o -t rsa -C "48753350+danieledeluca@users.noreply.github.com"
 ```
 
 Add your `SSH key` generated to the `ssh-agent`.
 
-```
+```sh
 eval `ssh-agent -s`
 ssh-add
 ```
 
 Create a new SSH key on [Github](https://github.com/settings/keys)
 
-```
+```sh
 cat .ssh/id_rsa.pub
 ```
 
 Clone the [`.dotfiles`](https://github.com/danieledeluca/dotfiles) repository to get all the configuration files you need.
 
-```
+```sh
 git clone git@github.com:danieledeluca/dotfiles.git ~/.dotifles
 ```
 
 Run the config script.
 
-```
+```sh
 ~/.dotifles/config.sh
 ```
 
@@ -138,7 +140,7 @@ Run the config script.
 
 In your `~` directory run this command to install some dependencies useful for linting and formatting code:
 
-```
+```sh
 npm i -D prettier eslint eslint-config-airbnb-base eslint-plugin-import stylelint stylelint-config-sass-guidelines
 ```
 
@@ -153,4 +155,3 @@ These are the dependencies that will be install:
 -   [stylelint](https://www.npmjs.com/package/stylelint)
     -   [stylelint-config-sass-guidelines](https://www.npmjs.com/package/stylelint-config-sass-guidelines)
     -   [stylelint-config-prettier-scss](https://www.npmjs.com/package/stylelint-config-prettier-scss)
--   [prettier](https://www.npmjs.com/package/prettier)
