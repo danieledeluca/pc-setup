@@ -104,6 +104,12 @@ Oh-my-zsh has a lot of useful plugins.
     sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
 
+### Utility packages
+
+```sh
+sudo apt-get install binutils
+```
+
 ---
 
 ## Github
