@@ -10,40 +10,47 @@ Winget allow you to install apps from `Windows Terminal`.
 
 Run this command in your `Terminal` to install a list of basic apps ([winstall](https://winstall.app/packs/zVcEYPpNJ)).
 
-```
-winget install --id=Google.Chrome -e  && winget install --id=Google.Drive -e  && winget install --id=7zip.7zip -e  && winget install --id=RARLab.WinRAR -e  && winget install --id=Microsoft.WindowsTerminal.Preview -e  && winget install --id=Microsoft.PowerToys -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Notepad++.Notepad++ -e  && winget install --id=Flywheel.Local -e  && winget install --id=Figma.Figma -e  && winget install --id=WhatsApp.WhatsApp -e  && winget install --id=Spotify.Spotify -e  && winget install --id=VideoLAN.VLC.Nightly -e  && winget install --id=Glarysoft.GlaryUtilities -e  && winget install --id=RevoUninstaller.RevoUninstaller -e  && winget install --id=QL-Win.QuickLook -e  && winget install --id=Logitech.OptionsPlus -e
+```sh
+winget install --id=Google.Chrome -e  && winget install --id=Mozilla.Firefox -e  && winget install --id=7zip.7zip -e  && winget install --id=RARLab.WinRAR -e  && winget install --id=SomePythonThings.WingetUIStore -e  && winget install --id=Microsoft.WindowsTerminal.Preview -e  && winget install --id=Microsoft.PowerToys -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Notepad++.Notepad++ -e  && winget install --id=Google.GoogleDrive -e  && winget install --id=Google.NearbyShare -e  && winget install --id=Figma.Figma -e  && winget install --id=WhatsApp.WhatsApp -e  && winget install --id=Spotify.Spotify -e  && winget install --id=VideoLAN.VLC -e  && winget install --id=Glarysoft.GlaryUtilities -e  && winget install --id=RevoUninstaller.RevoUninstaller -e  && winget install --id=QL-Win.QuickLook -e  && winget install --id=Logitech.OptionsPlus -e
 ```
 
 List of apps:
 
 -   Google Chrome
--   Google Drive
+-   Mozilla Firefox
 -   7-Zip
 -   WinRAR
+-   WingetUI
 -   WIndows Terminal Preview
 -   PowerToys
 -   Microsoft Visual Studio Code
 -   Notepad++
--   Local
+-   Google Drive
+-   Google Nearby Share
 -   Figma
 -   WhatsApp
 -   Spotify
--   VLC media player nightly
+-   VLC media player
+-   QuickLook
 -   Glary Utilities
 -   Revo Uninstaller
--   QuickLook
 -   Logi Options+
 
 ### Extra apps
 
 Some other apps need to be downloaded from their sties:
 
--   [Adobe Creative Cloud](https://www.adobe.com/it/creativecloud/desktop-app.html) allow you to install Adobe apps:
-    -   Adobe Photoshop
-    -   Adobe Illustrator
-    -   Adobe Acrobat DC
+-   [Adobe Creative Cloud](https://www.adobe.com/it/creativecloud/desktop-app.html) allow you to install Adobe apps
 -   [McAfee](https://myaccount.mcafee.com/dashboard/it-it/0) is an antivirus app
--   [Nearby share](https://www.android.com/better-together/nearby-share-app/) allow you to share anything with nearby devices
+
+### WordPres development
+
+-   [Local](https://localwp.com/) allow you to develop WordPress site
+
+    ```sh
+    winget install --id=Flywheel.Local
+    ```
+
 -   [Poedit](https://poedit.net/) allow you to translate WordPress site
 
 ---
