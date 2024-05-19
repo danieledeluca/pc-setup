@@ -36,24 +36,12 @@ List of apps:
 -   Revo Uninstaller
 -   Logi Options+
 
-### Extra apps
+### Other apps
 
 Some other apps need to be downloaded from their sties:
 
 -   [Adobe Creative Cloud](https://www.adobe.com/it/creativecloud/desktop-app.html) allow you to install Adobe apps
 -   [McAfee](https://myaccount.mcafee.com/dashboard/it-it/0) is an antivirus app
-
-### WordPres development
-
--   [Local](https://localwp.com/) allow you to develop WordPress site
-
-    ```sh
-    winget install --id=Flywheel.Local
-    ```
-
--   [Poedit](https://poedit.net/) allow you to translate WordPress site
-
----
 
 ## WSL
 
@@ -104,12 +92,6 @@ Oh-my-zsh has a lot of useful plugins.
     sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
     ```
 
-### Utility packages
-
-```sh
-sudo apt-get install binutils
-```
-
 ---
 
 ## Github
@@ -133,6 +115,10 @@ Create a new SSH key on [Github](https://github.com/settings/keys)
 cat .ssh/id_rsa.pub
 ```
 
+---
+
+## Global configuration
+
 Clone the [`.dotfiles`](https://github.com/danieledeluca/dotfiles) repository to get all the configuration files you need.
 
 ```sh
@@ -147,24 +133,14 @@ Run the config script.
 
 ---
 
-## NodeJS
+## WordPres development
 
-### Global configuration
+### Software
 
-In your `~` directory run this command to install some dependencies useful for linting and formatting code:
+-   [Local](https://localwp.com/) allow you to develop WordPress site
 
-```sh
-npm i -D prettier eslint eslint-config-airbnb-base eslint-plugin-import stylelint stylelint-config-sass-guidelines
-```
+    ```sh
+    winget install --id=Flywheel.Local
+    ```
 
-These are the dependencies that will be install:
-
--   [prettier](https://www.npmjs.com/package/prettier)
--   [eslint](https://www.npmjs.com/package/eslint)
-    -   [eslint-config-airbnb-base](https://www.npmjs.com/package/eslint-config-airbnb-base)
-    -   [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import)
-    -   [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier)
-    -   [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier)
--   [stylelint](https://www.npmjs.com/package/stylelint)
-    -   [stylelint-config-sass-guidelines](https://www.npmjs.com/package/stylelint-config-sass-guidelines)
-    -   [stylelint-config-prettier-scss](https://www.npmjs.com/package/stylelint-config-prettier-scss)
+-   [Poedit](https://poedit.net/) allow you to translate WordPress site
