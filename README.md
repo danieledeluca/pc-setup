@@ -122,13 +122,13 @@ cat .ssh/id_rsa.pub
 Clone the [`.dotfiles`](https://github.com/danieledeluca/dotfiles) repository to get all the configuration files you need.
 
 ```sh
-git clone git@github.com:danieledeluca/dotfiles.git ~/.dotifles
+git clone git@github.com:danieledeluca/dotfiles.git ~/.dotfiles
 ```
 
 Run the config script.
 
 ```sh
-~/.dotifles/config.sh
+~/.dotfiles/config.sh
 ```
 
 ---
