@@ -6,42 +6,64 @@ This repository contains info on all the apps, tools and settings I use on my PC
 
 ### Winget
 
-Winget allow you to install apps from `Windows Terminal`.
+Winget allow you to install apps from **Windows Terminal**.
 
-Run this command in your `Terminal` to install a list of basic apps ([winstall](https://winstall.app/packs/zVcEYPpNJ)).
+Run this command in your **Terminal** to install a list of basic apps.
 
 ```
-winget install --id=Google.Chrome -e  && winget install --id=Mozilla.Firefox -e  && winget install --id=7zip.7zip -e  && winget install --id=RARLab.WinRAR -e  && winget install --id=SomePythonThings.WingetUIStore -e  && winget install --id=Microsoft.WindowsTerminal.Preview -e  && winget install --id=Microsoft.PowerToys -e  && winget install --id=Microsoft.VisualStudioCode -e  && winget install --id=Notepad++.Notepad++ -e  && winget install --id=Google.GoogleDrive -e  && winget install --id=Google.NearbyShare -e  && winget install --id=Figma.Figma -e  && winget install --id=WhatsApp.WhatsApp -e  && winget install --id=Spotify.Spotify -e  && winget install --id=VideoLAN.VLC -e  && winget install --id=Glarysoft.GlaryUtilities -e  && winget install --id=RevoUninstaller.RevoUninstaller -e  && winget install --id=QL-Win.QuickLook -e  && winget install --id=Logitech.OptionsPlus -e
+winget install --id=7zip.7zip -e && winget install --id=Figma.Figma -e && winget install --id=Glarysoft.GlaryUtilities -e && winget install --id=Google.Chrome -e && winget install --id=Google.GoogleDrive -e && winget install --id=Logitech.OptionsPlus -e && winget install --id=Microsoft.VisualStudioCode -e && winget install --id=Mozilla.Firefox -e && winget install --id=Notepad++.Notepad++ -e && winget install --id=Microsoft.PowerToys -e && winget install --id=Google.QuickShare -e && winget install --id=QL-Win.QuickLook -e && winget install --id=RevoUninstaller.RevoUninstaller -e && winget install --id=Spotify.Spotify -e && winget install --id=MartiCliment.UniGetUI -e && winget install --id=VideoLAN.VLC -e && winget install --id=Microsoft.WindowsTerminal.Preview -e && winget install --id=RARLab.WinRAR -e
 ```
 
 List of apps:
 
--   Google Chrome
--   Mozilla Firefox
 -   7-Zip
--   WinRAR
--   WingetUI
--   WIndows Terminal Preview
--   PowerToys
--   Microsoft Visual Studio Code
--   Notepad++
--   Google Drive
--   Google Nearby Share
 -   Figma
--   WhatsApp
--   Spotify
--   VLC media player
--   QuickLook
 -   Glary Utilities
--   Revo Uninstaller
+-   Google Chrome
+-   Google Drive
 -   Logi Options+
+-   Microsoft Visual Studio Code
+-   Mozilla Firefox
+-   Notepad++
+-   PowerToys
+-   Quick Search
+-   QuickLook
+-   Revo Uninstaller
+-   Spotify
+-   UniGetUI
+-   VLC media player
+-   Windows Terminal Preview
+-   WinRAR
 
 ### Other apps
 
 Some other apps need to be downloaded from their sties:
 
 -   [Adobe Creative Cloud](https://www.adobe.com/it/creativecloud/desktop-app.html) allows you to install Adobe apps.
--   [McAfee](https://myaccount.mcafee.com/dashboard/it-it/0) is an antivirus app.
+
+    ```
+    winget install --id=Adobe.CreativeCloud -e
+    ```
+
+    -   Adobe Acrobat Reader allows you to work with `.pdf` files
+
+        ```
+        winget install --id=Adobe.Acrobat.Reader.64-bit -e
+        ```
+
+-   [McAfee](https://www.mcafee.com/it-it/index.html) is an antivirus app.
+
+-   [Local](https://localwp.com/) allows you to develop **WordPress** site.
+
+    ```
+    winget install --id=Flywheel.Local -e
+    ```
+
+-   [Poedit](https://poedit.net/) allows you to translate **WordPress** site.
+
+    ```
+    winget install --id=VaclavSlavik.Poedit -e
+    ```
 
 ## WSL
 
@@ -197,15 +219,3 @@ cat .ssh/id_rsa.pub
 See the [dotfiles](https://github.com/danieledeluca/dotfiles) repository.
 
 ---
-
-## WordPres development
-
-### Software
-
--   [Local](https://localwp.com/) allow you to develop WordPress site.
-
-    ```
-    winget install --id=Flywheel.Local
-    ```
-
--   [Poedit](https://poedit.net/) allow you to translate WordPress site.
