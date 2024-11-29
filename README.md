@@ -45,7 +45,7 @@ Some other apps need to be downloaded from their sties:
     winget install --id=Adobe.CreativeCloud -e
     ```
 
-    -   Adobe Acrobat Reader allows you to work with `.pdf` files
+    -   [Adobe Acrobat Reader](https://get.adobe.com/it/reader/) allows you to work with `.pdf` files
 
         ```
         winget install --id=Adobe.Acrobat.Reader.64-bit -e
