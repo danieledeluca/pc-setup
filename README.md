@@ -69,15 +69,49 @@ Some other apps need to be downloaded from their sties:
 
 Install the [WSL2](https://docs.microsoft.com/en-us/windows/wsl/install) (Windows Subsystem for Linux).
 
-Open the `PowerShell` as **administrator** and run these commands.
+-   Open the **Windows Features tool** by executing the `optionalfeatures` command from the **Run prompt or a Terminal window**.
+    You can also click on the Start menu and search for the term "**Turn Windows features on or off**" to do the same.
+-   In the new window, **place checkmarks** for the **Virtual Machine Platform** and the **Windows Subsystem for Linux** entries.
+-   Click **OK** and wait for Windows to download the required components.
+-   Restart your PC. (Could be optional)
+
+Open the **PowerShell** as `administrator` and run these commands.
 
 ```
-# Install WSL
+# Install WSL and Ubuntu as default distribution
 wsl --install
 
-# Install Ubuntu
-wsl --install -d Ubuntu
+# Set WSL to version 2
+wsl --set-default-version 2
 
+# Update WSL
+wsl --update
+```
+
+---
+
+## WSA
+
+Install the [WSA](https://learn.microsoft.com/it-it/windows/android/wsa/) (Windows Subsystem for Android).
+
+> Microsoft is ending support for the Windows Subsystem for Android™️ (WSA).
+> As a result, the Amazon Appstore on Windows and all applications and games dependent on WSA will no longer be supported beginning March 5, 2025.
+
+Install the [WSA with Google Play Service](https://www.xda-developers.com/how-to-install-google-play-store-windows-subsystem-for-android/).
+
+-   [Install Windows Subsystem for Linux](#wsl)
+-   Preparing Windows Subsystem for Android for patching
+    -   Download the latest [WSA Script from GitHub](https://github.com/MustardChef/WSABuilds).
+    -   Extract the ZIP file to a new folder.
+    -   Execute **run.bat**.
+
+---
+
+## Git and NodeJS
+
+Install [Git](https://git-scm.com/) e [NodeJS](https://nodejs.org/en).
+
+```
 # Install Git
 sudo apt install git
 
