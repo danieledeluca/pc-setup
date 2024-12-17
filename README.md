@@ -136,6 +136,8 @@ Customize the `Windows Terminal Preview`.
 
 ### Terminal settings
 
+You need to install a [nerd font](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k).
+
 ```json
 "profiles": {
     "defaults": {
@@ -162,11 +164,23 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 
 Before installing PowerLevel10k you need to install a [nerd font](https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#meslo-nerd-font-patched-for-powerlevel10k).
 
-```
-# Install PowerLevel10k
-git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+Clone the repository.
 
-# Run PowerLevel10k configuration
+```
+git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
+```
+
+Open `~/.zshrc`, find the line that sets `ZSH_THEME`, and change its value to `"powerlevel10k/powerlevel10k"`.
+
+Restart Zsh
+
+```
+exec zsh
+```
+
+Run PowerLevel10k configuration
+
+```
 p10k configure
 ```
 
