@@ -4,7 +4,7 @@ This repository contains info on all the apps, tools and settings I use on my PC
 
 ## Software
 
-### Winget
+### Basic apps
 
 Winget allow you to install apps from **Windows Terminal**.
 
@@ -34,6 +34,8 @@ List of apps:
 -   VLC media player
 -   Windows Terminal Preview
 -   WinRAR
+
+> NB: The Microsoft Store Apps (QuickLook and UniGetUI) could give some problems during the installation, in case install them manually.
 
 ### Other apps
 
