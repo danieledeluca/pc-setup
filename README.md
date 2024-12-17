@@ -114,6 +114,9 @@ Install the [WSA with Google Play Service](https://www.xda-developers.com/how-to
 Install [Git](https://git-scm.com/) e [NodeJS](https://nodejs.org/en).
 
 ```
+# Update all packages
+sudo apt update && sudo apt upgrade
+
 # Install Git
 sudo apt install git
 
